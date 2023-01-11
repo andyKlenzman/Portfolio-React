@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
-import ProjectFiles, { TinyProjectFiles } from "../assets/files/ProjectFiles";
+import ProjectFiles, { ExperimentProjectFiles } from "../assets/files/ProjectFiles";
 import IconContainer from "../components/molecules/IconContainer";
 import ParagraphContainer from "../components/molecules/ParagraphContainer";
 import ProjectBanner from "../components/organisms/ProjectBanner";
@@ -13,40 +13,32 @@ import MainText from "../components/atoms/MainText";
 import styled from "styled-components";
 import Paragraph from "../components/atoms/Paragraph";
 import MainTextBody from "../components/atoms/MainTextBody";
+import ProjectCardContainer from "../components/molecules/ProjectCardContainer";
 
 const TextHeader = styled.p`
   font-size: var(--smallMedium);
 `;
-const ProjectPageTemplate = () => {
+const ProjectPageTemplate = () =>  {
   const navigate = useNavigate();
 
   const { id } = useParams();
 
   return ProjectFiles.map((data, idx) => {
     if (data.isMenu && data.id === id) {
+        console.log("fsd", data.isButton)
       return (
         <div>
           <ProjectBanner
             primaryText={data.primaryText}
             secondaryText={data.secondaryText}
             projectLink={data.projectLink}
-            isButton={false}
-            backgroundColor="white"
+            isButton={data.isButton}
           />
-          {TinyProjectFiles.map((data, idx) => {
-            return (
-              <div
-                className="container-sm"
-                style={{ maxWidth: "756px", marginTop: "40px" }}
-              >
-                <div className="" style={{display:"flex", alignItems: "center", justifyContent:"center"}}>
-                  <MainTextBody text="Snapchat Lens" />
-                  <IconContainer selectedIcons={data.icons} />
-                </div>
-                <Paragraph text={"dsa"} />
-              </div>
-            );
-          })}
+          
+         
+            {/* <ProjectCardContainer projectFiles={ExperimentProjectFiles}/>
+          
+       
 
           <div
             className="container-sm"
@@ -59,7 +51,7 @@ const ProjectPageTemplate = () => {
               </div>
             )}
             <ParagraphContainer text={data.bodyText} />
-          </div>
+          </div> */}
           <ProjectNavigator
             prevProjectText={data.prevProjectText}
             nextProjectText={data.nextProjectText}
@@ -78,6 +70,7 @@ const ProjectPageTemplate = () => {
             primaryText={data.primaryText}
             secondaryText={data.secondaryText}
             projectLink={data.projectLink}
+            isButton={data.isButton}
           />
           <div
             className="container-sm"

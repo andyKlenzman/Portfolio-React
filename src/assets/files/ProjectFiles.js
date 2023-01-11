@@ -20,7 +20,8 @@ let ProjectFiles = [
     prevProjectId:"experiments",
     nextProjectText:"Tshare",
     prevProjectText:"Experiments",
-    isMenu: false
+    isMenu: false,
+    isButton: true
   },
   {
     id: "tshare",
@@ -40,7 +41,8 @@ let ProjectFiles = [
     prevProjectId:"dw",
     nextProjectText:"Lightbender",
     prevProjectText:"Democracy Works",
-    isMenu: false
+    isMenu: false,
+    isButton: true
   },
   {
     id: "lightbender",
@@ -60,13 +62,14 @@ let ProjectFiles = [
     prevProjectId:"tshare",
     nextProjectText:"Experiments",
     prevProjectText:"Tshare",
-    isMenu: false
+    isMenu: false,
+    isButton: true
   },
   {
     id: "experiments",
     mainImg: ImgFiles.experiments.main,
-    primaryText:"Experiments",
-    secondaryText: "Small projects that keep my coding skills sharp",
+    primaryText:"Coming Soon!",
+    secondaryText: "A display of the small projects that keep my coding skills sharp. Stay tuned.",
     isVideo:false,
     youtubeId:"",
     icons: [],
@@ -80,13 +83,14 @@ let ProjectFiles = [
     prevProjectId:"lightbender",
     nextProjectText:"Democracy Works",
     prevProjectText:"Lightbender",
-    isMenu: true
+    isMenu: true,
+    isButton: false
   },
 
 ];
 
 
-export let TinyProjectFiles = [
+export let ExperimentProjectFiles = [
   {
     primaryText:"Snapchat Lenses",
     secondaryText: "Javascript and Lens Studio to make filters promoting mental health",

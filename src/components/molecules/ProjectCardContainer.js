@@ -8,12 +8,12 @@ const Wrapper = styled.div`
 `;
 
 
-const ProjectCardContainer = () => {
+const ProjectCardContainer = ({projectFiles}) => {
   return (
     <Wrapper className="container">
       <div className="row  g-4">
     
-          {ProjectFiles.map((data, idx) => {
+          {projectFiles.map((data, idx) => {
             return (
               <ProjectCard
                 id={data.id}
