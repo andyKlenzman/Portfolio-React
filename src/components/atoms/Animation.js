@@ -126,7 +126,7 @@ class Blob {
   }
 
   update() {
-    if (this.y > this.effect.height + this.rad) {
+    if (this.y > this.effect.height + this.rad + 200) {
       this.x = Math.random() * window.innerWidth;
       this.y = 0 - this.rad;
     }

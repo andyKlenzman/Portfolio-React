@@ -10,7 +10,6 @@ const Button = styled.button`
   margin-top: 15px;
   align-self: center;
   background-color: transparent;
-  border: white solid 2px;
   transition: .7s;
 
 
@@ -24,6 +23,7 @@ const Text = styled.p`
   font-size: var(--small);
   text-transform: uppercase;
   margin-top:10px;
+  letter-spacing: .003rem
 
 `;
 

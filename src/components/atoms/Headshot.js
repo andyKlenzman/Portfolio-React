@@ -4,13 +4,14 @@ import styled from "styled-components";
 
 const Image = styled.img`
   border-radius: 50%;
-  height: 250px;
+  height: 200px;
   width: auto;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
     border:5px double var(--secondaryColor);
     border-radius: 500px;
+
    
   
 
@@ -18,7 +19,7 @@ const Image = styled.img`
 
 const Headshot = () => {
   return (
-    <div className="col-4" style={{display: "flex" , justifyContent:"center", alignItems:"center", marginRight:"auto", marginLeft:"auto"}}>
+    <div className="col-12 col-md-4" style={{display: "flex" , justifyContent:"center", alignItems:"center", marginRight:"auto", marginLeft:"auto", width:"inheret", overflow:"hidden"}}>
       <Image
         src={myFace}
         alt="Andy Klenzman professional headshot"

@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
-import ProjectFiles, { ExperimentProjectFiles } from "../assets/files/ProjectFiles";
+import ProjectFiles, {
+  ExperimentProjectFiles,
+} from "../assets/files/ProjectFiles";
 import IconContainer from "../components/molecules/IconContainer";
 import ParagraphContainer from "../components/molecules/ParagraphContainer";
 import ProjectBanner from "../components/organisms/ProjectBanner";
@@ -18,14 +20,14 @@ import ProjectCardContainer from "../components/molecules/ProjectCardContainer";
 const TextHeader = styled.p`
   font-size: var(--smallMedium);
 `;
-const ProjectPageTemplate = () =>  {
+const ProjectPageTemplate = () => {
   const navigate = useNavigate();
 
   const { id } = useParams();
 
   return ProjectFiles.map((data, idx) => {
     if (data.isMenu && data.id === id) {
-        console.log("fsd", data.isButton)
+      console.log("fsd", data.isButton);
       return (
         <div>
           <ProjectBanner
@@ -34,9 +36,8 @@ const ProjectPageTemplate = () =>  {
             projectLink={data.projectLink}
             isButton={data.isButton}
           />
-          
-         
-            {/* <ProjectCardContainer projectFiles={ExperimentProjectFiles}/>
+
+          {/* <ProjectCardContainer projectFiles={ExperimentProjectFiles}/>
           
        
 
