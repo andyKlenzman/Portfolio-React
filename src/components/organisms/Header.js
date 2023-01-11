@@ -36,13 +36,25 @@ const Header = () => {
   return (
     <Nav className="">
       <Text onClick={() => navigate("/")}>Home /</Text>
-      <Text href="mailto: andyklenz@gmail.com" target="_blank">Email / </Text>
-      <Text href="https://www.linkedin.com/in/andy-klenzman-735333149/" target="_blank">
+      <Text href="mailto: andyklenz@gmail.com" target="_blank">
+        Email /{" "}
+      </Text>
+      <Text
+        href="https://www.linkedin.com/in/andy-klenzman-735333149/"
+        target="_blank"
+      >
         LinkedIn /
       </Text>
 
-      <Text href="https://github.com/andyKlenzman" target="_blank" >Github / </Text>
-      <Text >CV </Text>
+      <Text href="https://github.com/andyKlenzman" target="_blank">
+        Github /{" "}
+      </Text>
+      <Text
+        href="https://drive.google.com/file/d/1FF_q1i7qkyVgjYmx6qnf2rQ6nsBi45EY/view?usp=sharing"
+        target="_blank"
+      >
+        CV{" "}
+      </Text>
     </Nav>
   );
 };
