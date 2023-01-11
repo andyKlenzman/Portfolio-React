@@ -7,10 +7,11 @@ const Button = styled.button`
   border: white solid 2px;
   width: 150px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 19px;
   align-self: center;
   background-color: transparent;
   transition: .7s;
+  width: 180px;
 
 
   &:hover {

@@ -8,7 +8,7 @@ const AnimationSmall = ({backgroundColor}) => {
     const render = () => {
       const canvas = canvasRef.current;
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight/1.9;
+      canvas.height = window.innerHeight/1.7;
       const ctx = canvas.getContext("2d");
       window.onresize = function () {
         canvas.width = window.innerWidth;
@@ -126,7 +126,7 @@ class Blob {
   }
 
   update() {
-    if (this.y > this.effect.height + this.rad) {
+    if (this.y > this.effect.height + this.rad + 180) {
       this.x = Math.random() * window.innerWidth;
       this.y = 0 - this.rad;
     }

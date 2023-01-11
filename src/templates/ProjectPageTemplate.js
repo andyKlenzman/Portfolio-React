@@ -75,7 +75,7 @@ const ProjectPageTemplate = () => {
           />
           <div
             className="container-sm"
-            style={{ maxWidth: "756px", marginTop: "40px" }}
+            style={{ maxWidth: "756px", marginTop: "80px" }}
           >
             <IconContainer selectedIcons={data.icons} style={{}} />
             {data.isVideo && (
