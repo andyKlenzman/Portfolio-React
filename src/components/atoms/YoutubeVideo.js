@@ -1,0 +1,33 @@
+import React from "react";
+
+const YoutubeVideo = ({ youtubeId }) => {
+  return (
+    <div>
+      <div
+        className="video"
+        style={{
+          position: "relative",
+          paddingBottom: "56.25%" /* 16:9 */,
+          paddingTop: 25,
+          height: 0,
+          marginTop: "30px",
+        }}
+      >
+        <iframe
+          title="project demonstration youtube"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          frameBorder="0"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default YoutubeVideo;
