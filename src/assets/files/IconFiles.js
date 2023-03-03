@@ -144,27 +144,6 @@ export const TshareIcons = [
 
 export const LightbenderIcons = [
   {
-    img: js,
-    text: "JavaScript",
-  },
-  {
-    img: react,
-    text: "React Native",
-  },
-  {
-    img: redux,
-    text: "Redux",
-  },
-
-  {
-    img: nodejs,
-    text: "NodeJS",
-  },
-  {
-    img: firebase,
-    text: "Firebase",
-  },
-  {
     img: cplus,
     text: "C++",
   },
@@ -179,6 +158,32 @@ export const LightbenderIcons = [
   },
 ];
 
+export const LightbenderMobileIcons = [
+  {
+    img: js,
+    text: "JavaScript",
+  },
+  {
+    img: react,
+    text: "React Native",
+  },
+  {
+    img: redux,
+    text: "Redux",
+  },
+  {
+    img: nodejs,
+    text: "NodeJS",
+  },
+  {
+    img: firebase,
+    text: "Firebase",
+  },
+  {
+    img: git,
+    text: "Git",
+  },
+];
 
 
 export const LensIcons = [

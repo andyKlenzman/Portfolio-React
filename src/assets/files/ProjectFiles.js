@@ -1,4 +1,4 @@
-import { TshareIcons, DwIcons, LightbenderIcons, LensIcons } from "./IconFiles";
+import { TshareIcons, DwIcons, LightbenderIcons, LensIcons, LightbenderMobileIcons } from "./IconFiles";
 import ImgFiles from "./ImgFiles.js";
 
 let ProjectFiles = [
@@ -76,7 +76,7 @@ let ProjectFiles = [
     secondaryText: "Mobile app for Lightbenders",
     isVideo: false,
     youtubeId: "",
-    icons: [],
+    icons: LightbenderMobileIcons,
     projectLink: "https://github.com/andyKlenzman/Nucampsite-Mobile-App",
     bodyText: [
       "I am currently developing a React-Native application that allows users to control LED lights in their environment using the motion sensors in their phone. By sending signals to a Bluetooth-enabled LED light strip, users will be able to control the color, intensity, and pattern of the lights by simply moving their phone.",
