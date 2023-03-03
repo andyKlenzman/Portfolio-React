@@ -50,7 +50,7 @@ const Header = () => {
         Github /{" "}
       </Text>
       <Text
-        href="https://drive.google.com/file/d/1FF_q1i7qkyVgjYmx6qnf2rQ6nsBi45EY/view?usp=sharing"
+        href="https://docs.google.com/document/d/116xtnqwOGtKrAWpiBpoc2Q-okcqDJrHa2ecpMvKWoOQ/edit?usp=sharing"
         target="_blank"
       >
         CV{" "}

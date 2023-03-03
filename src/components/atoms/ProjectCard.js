@@ -25,13 +25,13 @@ const BackgroundTextContainer = styled.p`
 const ForegroundBanner = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  padding: none;
+  width: 80%;
   text-align: left;
   position: absolute;
   bottom: 10%;
   overflow: hidden;
   height: 45px;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%); */
   z-index: -1;
 `;
 
@@ -40,6 +40,7 @@ const ForegroundSelectionBanner = styled.div`
   width: 100%;
   position: absolute;
   z-index: 15;
+  /* padding-right: -40px; */
 `;
 
 const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
@@ -50,7 +51,7 @@ const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
     width: isBooped ? `0%` : "100%",
     paddingLeft: isBooped ? "0px" : "15px",
   });
-  
+
   const propsBackground = useSpring({
     opacity: isBooped ? "1" : "0",
   });
@@ -68,8 +69,10 @@ const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
   useEffect(() => {
     if (isBooped) {
       const timer = setTimeout(() => {
+       
         setIsBooped(false);
       }, 5000);
+      
     }
   }, [isBooped]);
   return (
