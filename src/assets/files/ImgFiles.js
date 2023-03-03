@@ -1,9 +1,10 @@
 import dw from "../imgs/dw/dw.png"
-import lightbender from "../imgs/lightbender/lightbender.gif"
+import lightbenderGIF from "../imgs/lightbender/lightbender.gif"
+import lightbender from "../imgs/lightbender/smallLightbenderFace.png"
 import tshare from "../imgs/tshare/tshare.png"
-import peerdesk from "../imgs/peerdesk/peerdesk.png"
+import peerdesk from "../imgs/lightbender/lightbender.gif"
 
-
+// exporting files for project card in main page
 let ImgFiles = {
   dw: {
       main: dw,
@@ -14,7 +15,7 @@ let ImgFiles = {
   tshare: {   
       main: tshare
   },
-  experiments: {   
+  lightbendermobile: {   
       main: peerdesk
   },
   

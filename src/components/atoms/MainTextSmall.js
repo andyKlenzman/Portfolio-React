@@ -10,16 +10,18 @@ const Wrapper = styled.div`
   margin: none;
   padding: none;
   margin-bottom: -15px;
+  
 `;
 
 const TextFront = styled.p`
   position: relative;
-  z-index: 42;
+  z-index: 5;
   opacity: 1;
   color: white;
   padding: none;
   margin: none;
   font-size: var(--medium)
+
 `;
 
 const TextBack = styled.p`

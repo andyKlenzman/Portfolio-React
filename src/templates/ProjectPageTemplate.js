@@ -1,9 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
-import ProjectFiles, {
-  ExperimentProjectFiles,
-} from "../assets/files/ProjectFiles";
+import ProjectFiles from "../assets/files/ProjectFiles";
 import IconContainer from "../components/molecules/IconContainer";
 import ParagraphContainer from "../components/molecules/ParagraphContainer";
 import ProjectBanner from "../components/organisms/ProjectBanner";
@@ -25,9 +23,10 @@ const ProjectPageTemplate = () => {
 
   const { id } = useParams();
 
+
+  // returns data from project files
   return ProjectFiles.map((data, idx) => {
     if (data.isMenu && data.id === id) {
-      console.log("fsd", data.isButton);
       return (
         <div>
           <ProjectBanner
