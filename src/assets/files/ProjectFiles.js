@@ -78,9 +78,9 @@ let ProjectFiles = [
     isVideo: false,
     youtubeId: "",
     icons: LightbenderMobileIcons,
-    projectLink: "https://github.com/andyKlenzman/Nucampsite-Mobile-App",
+    projectLink: "https://github.com/andyKlenzman/Lightbender_Mobile",
     bodyText: [
-      "I am currently developing a React-Native application that allows users to control LED lights in their environment using the motion sensors in their phone. By sending signals to a Bluetooth-enabled LED light strip, users will be able to control the color, intensity, and pattern of the lights by simply moving their phone.",
+      "I am currently developing a React-Native application that allows users to control LED light strips using the motion sensors in their phone. By sending signals to a Bluetooth-enabled LED light strip, users will be able to control the color, intensity, and pattern of the lights by simply moving their phone.",
 
       "Inspired by my previous version of Lightbender, this app was developed with the goal of sharing that technology with users as an approachable and unique way to express themselves through light, color, and dance. Whether using the app to control lights in their room or embedded in their clothing, users can create mesmerizing visual displays that are responsive to their movement and mood.",
 
