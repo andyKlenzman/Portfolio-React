@@ -23,7 +23,6 @@ const ProjectPageTemplate = () => {
 
   const { id } = useParams();
 
-
   // returns data from project files
   return ProjectFiles.map((data, idx) => {
     if (data.isMenu && data.id === id) {
@@ -36,28 +35,7 @@ const ProjectPageTemplate = () => {
             isButton={data.isButton}
           />
 
-          {/* <ProjectCardContainer projectFiles={ExperimentProjectFiles}/>
-          
-       
-
-          <div
-            className="container-sm"
-            style={{ maxWidth: "756px", marginTop: "40px" }}
-          >
-            <IconContainer selectedIcons={data.icons} style={{}} />
-            {data.isVideo && (
-              <div style={{ marginBottom: "30px" }}>
-                <YoutubeVideo youtubeId={data.youtubeId} />
-              </div>
-            )}
-            <ParagraphContainer text={data.bodyText} />
-          </div> */}
-          <ProjectNavigator
-            prevProjectText={data.prevProjectText}
-            nextProjectText={data.nextProjectText}
-            prevProjectId={data.prevProjectId}
-            nextProjectId={data.nextProjectId}
-          />
+          <ProjectNavigator currentProjectIndex={idx} />
           <Footer />
         </div>
       );

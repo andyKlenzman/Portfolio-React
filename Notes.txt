@@ -1,0 +1,1 @@
+-for icons, should just be able to write a list of the technologies, and then they can be queried

@@ -22,7 +22,7 @@ const ProjectBanner = ({ primaryText, secondaryText, projectLink, isButton, back
       <Wrapper>
         <MainText text={primaryText} />
         <SecondaryText text={secondaryText} />
-        {isButton ? <BigButton text="View Project" projectLink={projectLink}/> : null}
+        <BigButton text="View Project" projectLink={projectLink}/>
       </Wrapper>
     </div>
   );
