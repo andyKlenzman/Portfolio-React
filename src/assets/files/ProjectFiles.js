@@ -2,7 +2,6 @@ import {
   TshareIcons,
   DwIcons,
   LightbenderIcons,
-  LensIcons,
   LightbenderMobileIcons,
 } from "./IconFiles";
 import ImgFiles from "./ImgFiles.js";
