@@ -1,7 +1,6 @@
 import React from "react";
 import AnimationSmall from "../atoms/AnimationSmall";
 import SecondaryText from "../atoms/SecondaryText";
-import MainTextSmall from "../atoms/MainTextSmall";
 import styled from "styled-components";
 import MainText from "../atoms/MainText";
 import BigButton from "../atoms/BigButton";
@@ -15,7 +14,7 @@ const Wrapper = styled.div`
   align-items: center;
   text-align: center;
 `;
-const ProjectBanner = ({ primaryText, secondaryText, projectLink, isButton, backgroundColor }) => {
+const ProjectBanner = ({ primaryText, secondaryText, projectLink}) => {
   return (
     <div>
       <AnimationSmall  />
