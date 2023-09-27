@@ -14,14 +14,15 @@ const Wrapper = styled.div`
   align-items: center;
   text-align: center;
 `;
-const ProjectBanner = ({ primaryText, secondaryText, projectLink}) => {
+
+const ProjectBanner = ({ title, subtitle, link }) => {
   return (
     <div>
-      <AnimationSmall  />
+      <AnimationSmall />
       <Wrapper>
-        <MainText text={primaryText} />
-        <SecondaryText text={secondaryText} />
-        <BigButton text="View Project" projectLink={projectLink}/>
+        <MainText text={title} />
+        <SecondaryText text={subtitle} />
+        <BigButton text="View Project" projectLink={link} />
       </Wrapper>
     </div>
   );

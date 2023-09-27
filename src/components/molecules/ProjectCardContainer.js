@@ -7,24 +7,21 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-
-const ProjectCardContainer = ({projectFiles}) => {
+const ProjectCardContainer = () => {
   return (
     <Wrapper className="container">
-      <div className="row  g-4">
-    
-          {projectFiles.map((data, idx) => {
-            return (
-              <ProjectCard
-                id={data.id}
-                primaryText={data.primaryText}
-                secondaryText={data.secondaryText}
-                img={data.mainImg}
-                key={idx}
-              />
-            );
-          })}
-    
+      <div className="row g-4">
+        {ProjectFiles.map((data, idx) => {
+          return (
+            <ProjectCard
+              id={data.id}
+              title={data.title}
+              subtitle={data.subtitle}
+              img={data.mainImg}
+              key={idx}
+            />
+          );
+        })}
       </div>
     </Wrapper>
   );

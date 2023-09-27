@@ -43,7 +43,7 @@ const ForegroundSelectionBanner = styled.div`
   /* padding-right: -40px; */
 `;
 
-const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
+const ProjectCard = ({ img, title, subtitle, id }) => {
   const [isBooped, setIsBooped] = useState(false);
   const navigate = useNavigate();
 
@@ -69,10 +69,8 @@ const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
   useEffect(() => {
     if (isBooped) {
       const timer = setTimeout(() => {
-       
         setIsBooped(false);
       }, 5000);
-      
     }
   }, [isBooped]);
   return (
@@ -87,13 +85,13 @@ const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
           config={{ mass: 1, tension: 500, friction: 0, clamp: true }}
         >
           <BackgroundTextContainer class="lg_text_banner">
-            <MainTextSmall text={primaryText} />
-            <SecondaryText text={secondaryText} />
+            <MainTextSmall text={title} />
+            <SecondaryText text={subtitle} />
           </BackgroundTextContainer>
         </BackgroundContainer>
         <ForegroundSelectionBanner onMouseEnter={boop} onMouseLeave={unboop}>
           <ForegroundBanner as={animated.div} style={propsForeground}>
-            <MainTextSmall text={primaryText} />
+            <MainTextSmall text={title} />
           </ForegroundBanner>
         </ForegroundSelectionBanner>
       </div>

@@ -1,5 +1,4 @@
 import dw from "../imgs/dw/dw.png";
-import lightbenderGIF from "../imgs/lightbender/lightbender.gif";
 import lightbender from "../imgs/lightbender/smallLightbenderFace.png";
 import tshare from "../imgs/tshare/tshare.png";
 import lightbendermobile from "../imgs/lightbender/lightbender.gif";
@@ -15,6 +14,7 @@ let projectMediaFiles = {
   },
   tshare: {
     mainImg: tshare,
+    
   },
   bikelight: {
     mainImg: lightbendermobile,
