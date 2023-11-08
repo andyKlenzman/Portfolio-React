@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
+
+
 const Nav = styled.header`
   background-color: #1c1c1c;
   display: flex;

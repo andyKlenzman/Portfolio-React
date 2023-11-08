@@ -1,6 +1,5 @@
 import React from "react";
 import Icon from "../atoms/Icon";
-import IconFiles from "../../assets/files/IconFiles";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -9,17 +8,15 @@ const Wrapper = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: none;
-
-
+  padding: 20px;
+  
 `;
 
-
-const IconContainer = ({selectedIcons}) => {
+const IconContainer = ({ selectedIcons, intro }) => {
   return (
-    <Wrapper >
+    <Wrapper>
       {selectedIcons.map((icon, idx) => {
-        return <Icon icon={icon.img} text={icon.text} key={idx} />;
+        return <Icon icon={icon.img} text={icon.text} intro={intro} key={idx} />;
       })}
     </Wrapper>
   );

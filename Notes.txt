@@ -1,0 +1,16 @@
+TO DO:
+- Check video components
+- enhance the styling of the images, they look kinda ugly
+
+
+
+MEDIA TASKS
+- Upload the image of the UI and something of the lights changing color
+- Polish up githubs (fix the JS bug)
+- capture a video of light bike working in Unison
+- change the main picture for light bike
+- loading componenet for video
+
+
+LT to do
+- Centralized styling!

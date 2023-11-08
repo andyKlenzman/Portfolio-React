@@ -1,23 +1,24 @@
-import React from 'react'
-import ProjectCardContainer from '../components/molecules/ProjectCardContainer'
-import Banner from '../components/organisms/Banner'
-import Introduction from '../components/organisms/Introduction'
-import Footer from '../components/organisms/Footer'
-import ProjectFiles from '../assets/files/ProjectFiles'
+import React from "react";
+import ProjectCardContainer from "../components/molecules/ProjectCardContainer";
+import Banner from "../components/organisms/Banner";
+import Introduction from "../components/organisms/Introduction";
+import Footer from "../components/organisms/Footer";
+
 const LandingPageTemplate = () => {
   return (
     <div>
-      <Banner primaryText="Andy Klenzman" secondaryText="&lt;Full Stack Developer />" isMainButton={true} buttonText="View Portfolio"/>
+      <Banner
+        primaryText="Andy Klenzman"
+        secondaryText="&lt;Full Stack Developer />"
+        isMainButton
+        buttonText="View Portfolio"
+      />
       <Introduction />
-      <ProjectCardContainer projectFiles={ProjectFiles} />
-      <div style={{height:"60px"}}/>
+      <ProjectCardContainer />
+      <div style={{ height: "60px" }} />
       <Footer />
-      
-
-
     </div>
-    
-  )
-}
+  );
+};
 
-export default LandingPageTemplate
+export default LandingPageTemplate;

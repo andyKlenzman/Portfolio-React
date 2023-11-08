@@ -1,10 +1,14 @@
 import React from "react";
 import IconContainer from "../molecules/IconContainer";
 import styled from "styled-components";
-import Paragraph from "../atoms/Paragraph";
 import Headshot from "../atoms/Headshot";
-import {introHeader, introBody} from "../../assets/copy/landingPageCopy.js"
-import { AllIconFiles } from "../../assets/files/IconFiles";
+import { introHeader } from "../../assets/copy/landingPageCopy";
+import { AllIconFiles } from "../../assets/assetManagementFiles/techIconFiles";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import { general } from "../../assets/assetManagementFiles/mediaFiles";
+import styles from "../../styles/markdown-styles.module.css";
+import { useEffect, useState } from "react";
 const TextHeader = styled.p`
   font-size: var(--smallMedium);
 `;
@@ -15,15 +19,30 @@ const Wrapper = styled.div`
 `;
 
 const Introduction = () => {
+  const [markdownContent, setMarkdownContent] = useState("");
+
+  useEffect(() => {
+    fetch(general.intro)
+      .then((response) => response.text())
+      .then((data) => setMarkdownContent(data))
+      .catch((error) => console.error("Error fetching Markdown file:", error));
+  }, []);
+
   return (
     <Wrapper className="container" id="portfolio">
       <div className="row">
-      <Headshot />
-      <div className="col-12 col-md-8">
-        <TextHeader>{introHeader}</TextHeader>
-        <Paragraph text={introBody} />
-        <IconContainer selectedIcons={AllIconFiles}/>
-      </div>
+        <Headshot />
+        <div className="col-12 col-md-8">
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            linkTarget="_blank"
+            children={markdownContent}
+            className={styles.reactMarkDown}
+
+            // escapeHtml={false}
+          />
+          <IconContainer selectedIcons={AllIconFiles} intro />
+        </div>
       </div>
     </Wrapper>
   );

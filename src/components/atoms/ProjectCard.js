@@ -1,11 +1,23 @@
-import React, { useEffect } from "react";
-import dw from "../../assets/imgs/dw/dw.png";
 import SecondaryText from "./SecondaryText";
 import styled from "styled-components";
 import MainTextSmall from "./MainTextSmall";
 import { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useNavigate } from "react-router";
+
+const CardWrapper = styled.div`
+  width: 100%;
+  height: 300px; /* Set a fixed height for all cards */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+`;
+
+const CardImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the fixed-size container */
+`;
 
 const BackgroundContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.562);
@@ -43,7 +55,7 @@ const ForegroundSelectionBanner = styled.div`
   /* padding-right: -40px; */
 `;
 
-const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
+const ProjectCard = ({ img, title, subtitle, id }) => {
   const [isBooped, setIsBooped] = useState(false);
   const navigate = useNavigate();
 
@@ -62,38 +74,25 @@ const ProjectCard = ({ img, primaryText, secondaryText, id }) => {
     setIsBooped(true);
   };
 
-  const trigger = () => {
-    isBooped ? setIsBooped(false) : setIsBooped(true);
-  };
-
-  useEffect(() => {
-    if (isBooped) {
-      const timer = setTimeout(() => {
-       
-        setIsBooped(false);
-      }, 5000);
-      
-    }
-  }, [isBooped]);
   return (
     <div className="col-lg-6 col-12" onClick={() => navigate(`project/${id}`)}>
       <div className="card border-0 shadow">
-        <div className="relative">
-          <img className="card-img" src={img} alt="software project" />
-        </div>
+        <CardWrapper onClick={() => navigate(`project/${id}`)}>
+          <CardImage src={img} alt="software project" />
+        </CardWrapper>
         <BackgroundContainer
           as={animated.div}
           style={propsBackground}
           config={{ mass: 1, tension: 500, friction: 0, clamp: true }}
         >
           <BackgroundTextContainer class="lg_text_banner">
-            <MainTextSmall text={primaryText} />
-            <SecondaryText text={secondaryText} />
+            <MainTextSmall text={title} />
+            <SecondaryText text={subtitle} />
           </BackgroundTextContainer>
         </BackgroundContainer>
         <ForegroundSelectionBanner onMouseEnter={boop} onMouseLeave={unboop}>
           <ForegroundBanner as={animated.div} style={propsForeground}>
-            <MainTextSmall text={primaryText} />
+            <MainTextSmall text={title} />
           </ForegroundBanner>
         </ForegroundSelectionBanner>
       </div>

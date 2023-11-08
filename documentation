@@ -1,0 +1,13 @@
+Data schemea
+
+
+Behind the scenes naming conventions:
+PROJECTS
+    - dw
+    - lightbender
+    - tshare
+    - bikelight
+
+Files
+    - Caps if component
+    - camel case if not
