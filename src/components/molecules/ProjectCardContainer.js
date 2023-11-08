@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../atoms/ProjectCard";
-import ProjectFiles from "../../assets/files/ProjectFiles.js";
+import ProjectFiles from "../../assets/assetManagementFiles/projectFiles";
 import styled from "styled-components";
 
 const Wrapper = styled.div`

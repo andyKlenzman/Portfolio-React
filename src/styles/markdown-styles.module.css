@@ -1,0 +1,66 @@
+.reactMarkDown span {
+  text-align: justify;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.reactMarkDown p {
+  text-align: justify;
+}
+.reactMarkDown li {
+  text-align: justify;
+}
+
+.reactMarkDown iframe {
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+}
+
+/* Apply different max-width to landscape (wider) images */
+.reactMarkDown img {
+  height: auto;
+  width: auto\9;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+
+}
+
+
+
+/* Responsive styling for desktop screens */
+@media (min-width: 769px) {
+  .reactMarkDown img {
+    max-width: 100%;
+
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .reactMarkDown img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .reactMarkDown img {
+    max-width: 80%;
+  }
+}
+
+.reactMarkDown a {
+  text-decoration: underline; /* Add underline to links */
+}
+
+
+

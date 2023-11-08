@@ -1,5 +1,5 @@
 import React from "react";
-import myFace from "../../assets/imgs/myFace.jpg";
+import { general } from "../../assets/assetManagementFiles/mediaFiles";
 import styled from "styled-components";
 
 const Image = styled.img`
@@ -21,7 +21,7 @@ const Headshot = () => {
   return (
     <div className="col-12 col-md-4" style={{display: "flex" , justifyContent:"center", alignItems:"center", marginRight:"auto", marginLeft:"auto", width:"inheret", overflow:"hidden"}}>
       <Image
-        src={myFace}
+        src={general.headshot}
         alt="Andy Klenzman professional headshot"
         
       />

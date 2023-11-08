@@ -9,7 +9,7 @@ const LandingPageTemplate = () => {
     <div>
       <Banner
         primaryText="Andy Klenzman"
-        secondaryText="&lt;Front End Developer />"
+        secondaryText="&lt;Full Stack Developer />"
         isMainButton
         buttonText="View Portfolio"
       />

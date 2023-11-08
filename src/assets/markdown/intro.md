@@ -1,0 +1,3 @@
+﻿#### Why Hello There!
+
+I’m a Software Developer that believes technology can help us achieve incredible things. My portfolio displays some of my projects that have shaped my technical skill set and problem solving approach. Currently I'm living in Cologne, Germany to participate in a year long exchange program called [Parlamentarisches Patenschafts-Programm](https://www.bundestag.de/ppp). I am studying Computer Science at University of Cologne, and looking for a Praktikum this January. Here are some of the technologies I like to use:

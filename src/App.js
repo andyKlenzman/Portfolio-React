@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import ProjectPage from "./pages/ProjectPage";
 import Header from "./components/organisms/Header";
-import IconContainer from "./components/molecules/IconContainer";
 import GoToTop from "./utils/ScrollToTop";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/project/:id" element={<ProjectPage />}></Route>
-        <Route path="/test" element={<IconContainer />}></Route>
       </Routes>
       <GoToTop />
     </div>
