@@ -1,6 +1,6 @@
 ﻿#### Using Python to Help Americans Vote
 
-The Voting Information Project (VIP) is an initiative led by Google and Democracy Works [Link text Here](https://link-url-here.org) that helps millions of voters find information about their elections with Google's Civic Information API. Our cross-company team of data scientists, software engineers, and election experts worked to receive, review, and approve the most up-to-date information on where and when to vote. The data we sourced was viewed 140 million times to inform people about the 2022 primary elections.
+The Voting Information Project (VIP) is an initiative led by Google and [Democracy Works](https://www.democracy.works/) that helps millions of voters find information about their elections with Google's Civic Information API. Our cross-company team of data scientists, software engineers, and election experts worked to receive, review, and approve the most up-to-date information on where and when to vote. The data we sourced was viewed 140 million times to inform people about the 2022 primary elections.
 
 As one of our seven Data Science Apprentice for Democracy Works, I was directly responsible for efficiently collecting and formatting the data to be sent to Google for Florida, Kansas, Maine, Minnesota, and Vermont.
 
